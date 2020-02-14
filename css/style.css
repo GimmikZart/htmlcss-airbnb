@@ -8,25 +8,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
-/* body {
-  border: 2px solid black;
-} */
-
-
 /* STILE DI NAVIGAZIONE */
 
-header{
-  border: 2px solid green;
+body{
+  background-color: rgb(90,149,181);
 }
 
-nav{
-  border: 2px solid rgb(174, 214, 39);
+header{
+  background-color: rgb(90,149,181);
+  top:0;
+  left:0;
   height: 100px;
   width: 100%;
   position: fixed;
   display: block;
-  background-color: grey;
-}
+  z-index: 2;
+  }
+
 
 #logo {
   display: block;
@@ -37,50 +35,97 @@ nav{
 #menu {
     position: absolute;
     top: 50%;
-    left: 450px;
-    transform: translate(-50%,-50%);
+    right: 0;
+    transform: translate(0,-50%);
 }
 
 #menu li {
-  border: 2px solid red;
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
+  font-weight:normal;
 }
 
-
-
-
-
-
-/* main {
-  margin-top: 110px;
+li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
 }
 
+/* STILE IN PAGINA */
 
-
-
+main {
+  margin-top: 150px;
+}
 
 .container{
-  display: none;
+  margin-top: 10px;
   width: 100%;
   height: 500px;
-  border: 2px solid red;
   display: block;
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
 }
 
+.overlay{
+  opacity: 0.6;
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
 #bayonne {
   background-image: url(../img/bayonne.jpg);
+
 }
 
 #keelogues {
   background-image: url(../img/Keelogues.jpg);
+
 }
 
 #limassol {
   background-image: url(../img/limassol.jpg);
-} */
+
+}
+
+
+.luogo {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border: 2px solid black;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+
+
+}
+
+.container .luogo h2 {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+
+article:hover #bayonne {
+  opacity: 1;
+  cursor: pointer;
+}
+
+article:hover #keelogues {
+  opacity: 1;
+  cursor: pointer;
+}
+
+article:hover #limassol {
+  opacity: 1;
+  cursor: pointer;
+}
