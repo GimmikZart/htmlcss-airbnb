@@ -1,0 +1,68 @@
+/* FOGLIO DI STILE */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* body {
+  border: 2px solid black;
+} */
+
+
+/* STILE DI NAVIGAZIONE */
+
+header{
+  border: 2px solid green;
+}
+
+nav{
+  border: 2px solid rgb(174, 214, 39);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  display: block;
+  background-color: black;
+}
+
+#logo {
+  display: inline;
+  width: 80px;
+  height: :100%;
+}
+
+
+
+
+
+
+
+/* main {
+  margin-top: 110px;
+}
+
+
+
+
+
+.container{
+  width: 100%;
+  height: 500px;
+  border: 2px solid red;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#bayonne {
+  background-image: url(../img/bayonne.jpg);
+}
+
+#keelogues {
+  background-image: url(../img/Keelogues.jpg);
+}
+
+#limassol {
+  background-image: url(../img/limassol.jpg);
+} */
